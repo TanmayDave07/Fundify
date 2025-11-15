@@ -20,6 +20,19 @@
         border-radius: 8px;
         padding: 30px;
         width: 300px;
+        position: relative;
+    }
+    .back-btn{
+        text-decoration: none;
+        border: 1px black solid;
+        border-radius: 4px;
+        background-color: white;
+        color: black;
+        padding: 2px;
+        position: absolute;
+        right: 25px;
+        top: 20px;
+
     }
     h2 {
         color: bisque;
@@ -45,10 +58,10 @@
     button {
         background-color: #ffe4c4;
         color: rgb(0, 0, 0);
-        padding: 2px;
         border-radius: 8px;
-        
-
+        padding: 4px;
+        font-size: 15px;
+        padding-top: 5px;
     }
     button:hover {
         background-color: rgb(255, 203, 139);
@@ -57,6 +70,9 @@
 </head>
 <body>
     <div class="card">
+        <div>
+            <a class="back-btn" href="http://127.0.0.1:3000/index.html">Back</a>
+        </div>
         <h2>Login </h2>
         <form>
             <input type="email" name="" id="" placeholder="email">

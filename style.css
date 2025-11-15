@@ -9,46 +9,53 @@ body{
     color: #333;
 }
 
-.navbar{
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
-    padding: 15px 50px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px 10%;
+    background-color: rgb(0, 0, 0);
+    color:#eaf3ff ;
+    gap: 50px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); */
 }
-.logo{
+
+
+.logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #007bff;
-    
+    color: #0074ff;
 }
 
-.nav-links{
-    color: #007bff;
+/* nav links horizontally  */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-links a {
+.nav-links li a {
     text-decoration: none;
-    color: #333;
+    color: #fffefe;
     font-weight: 500;
-}
+    }
 
-.nav-links a:hover {
-    color: #007bff;
-}
-.btn{
-    background-color: #333;
-    color: #f9fbfd;
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.3s;
+.nav-links li a:hover {
+    color: #0074ff;
+
 }
 
 .btn:hover{
     background-color: #000000;
 }
+
+.nav-links {
+    gap: 50px;
+}
+
 
 /* Hero Section */
 .hero {
@@ -61,12 +68,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 40px;
 }
 
 .hero-text {
-    flex: 1 1 400px;
     max-width: 600px;
     }
 
@@ -107,7 +112,7 @@ body{
     border-radius: 8px;
     font-weight: bold;
     text-decoration: none;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 
 .hero-btn:hover {
@@ -117,15 +122,14 @@ body{
 
 /* Hero Image */
 .hero-image {
-    flex: 1 1 400px;
     text-align: center;
 }
 
 .hero-image img {
     width: 100%;
-    max-width: 450px;
+    max-width: 750px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
     }
 
 
@@ -155,7 +159,7 @@ body{
     border-radius: 10px;
     width: 280px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
+    /* transition: transform 0.3s, box-shadow 0.3s; */
 }
 
 .card:hover {
@@ -280,42 +284,6 @@ body{
     background-color: #eaf3ff;
 }
 
-/* Navbar styling */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 10%;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #0074ff;
-}
-
-/* Make nav links horizontal */
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
-    }
-
-.nav-links li a:hover {
-    color: #0074ff;
-}
-
 /* Login button */
 .btn {
     background-color: #333;
@@ -402,7 +370,7 @@ body{
     border-radius: 12px;
     width: 280px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    /* transition: transform 0.3s ease; */
     }
 
     .service-card:hover {
@@ -448,6 +416,7 @@ body{
 .contact-form button:hover {
     background: #0056b3; 
 }
+
 
 
 
