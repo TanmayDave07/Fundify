@@ -14,6 +14,7 @@
                 </ul>
             <!-- </nav> -->
             <a href="login.html" class="btn">Login</a>
+            <button id="dark-mode-toggle">Dark Mode</button>
 
         </header>
         <section class="hero">
@@ -60,6 +61,25 @@
             </div>
         </div>
         </section>
+        <section class="sip-section"> // SIP Calculator Section
+        <h2>SIP Calculator</h2>
+
+        <div class="sip-box">
+            <label>Monthly Investment (₹)</label>
+            <input type="number" id="sip-monthly" placeholder="e.g., 1000">
+
+            <label>Annual Interest Rate (%)</label>
+            <input type="number" id="sip-rate" placeholder="e.g., 12">
+
+            <label>Time Period (Years)</label>
+            <input type="number" id="sip-years" placeholder="e.g., 5">
+
+            <button onclick="calculateSIP()">Calculate</button>
+
+            <p id="sip-result"></p>
+            </div>
+        </section>
+
         <section class="testimonials">
         <h2>What Our Users Say</h2>
             <div class="testimonial-container">
@@ -103,5 +123,6 @@
         <footer>
             <p>© 2025 Fundify | Powered by Dave Tanmay</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>

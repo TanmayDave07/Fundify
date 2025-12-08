@@ -15,10 +15,23 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     color:#eaf3ff ;
     gap: 50px;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); */
+}
+#dark-mode-toggle {
+    margin-left: 20px;
+    background-color: black;
+
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+}
+#dark-mode-toggle:hover {
+    background-color: #0074ff;
+    cursor: pointer;
 }
 
 
@@ -39,7 +52,7 @@ body{
 
 .nav-links li a {
     text-decoration: none;
-    color: #fffefe;
+    color: #000000;
     font-weight: 500;
     }
 
@@ -416,6 +429,63 @@ body{
 .contact-form button:hover {
     background: #0056b3; 
 }
+
+/*  SIP Cal  CSS  */
+.sip-section {
+    text-align: center;
+    padding: 60px 10%;
+    background-color: #ffffff;
+}
+
+.sip-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.sip-box {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.sip-box label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.sip-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.sip-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0074ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sip-box button:hover {
+    background-color: #0056c7;
+}
+
+#sip-result {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
 
 
 
